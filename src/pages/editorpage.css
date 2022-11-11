@@ -1,0 +1,33 @@
+.editor-container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 200px;
+  padding-right: 200px;
+}
+
+.editor-header {
+  height: 5vh;
+  background-color:aliceblue;
+  
+}
+
+.editor-header-title {
+  font-size: large;
+  font-weight: 700;
+  line-height: 5vh;
+  margin-left: 1vw;
+}
+
+
+.editor-footer {
+  height: 6vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  float: right;
+}
+
+.editor-btn {
+  height: 5vh;
+  width: 10vh;
+}
