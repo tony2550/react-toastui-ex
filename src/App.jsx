@@ -6,9 +6,10 @@ import GridPage from './pages/GridPage';
 import DraftjsPage from './pages/DraftjsPage';
 import QuillPage from './pages/QuillPage';
 import JoditPage from './pages/JoditPage';
+import CKeditorPage from './pages/CKeditorPage';
 
 const App = () => {
-  const [page, setPage] = useState(0);
+  const [page, setPage] = useState(5);
 
   return (
     <div className='app'>
@@ -19,6 +20,7 @@ const App = () => {
           <li onClick={() => setPage(2)}>draftJS</li>
           <li onClick={() => setPage(3)}>quill</li>
           <li onClick={() => setPage(4)}>jodit</li>
+          <li onClick={() => setPage(5)}>CK</li>
         </ul>
       </div>
       <div className='app-main'>
@@ -30,8 +32,10 @@ const App = () => {
           <DraftjsPage />
         ) : page === 3 ? (
           <QuillPage />
-        ) : (
+        ) : page === 4 ? (
           <JoditPage />
+        ) : (
+          <CKeditorPage />
         )}
       </div>
     </div>

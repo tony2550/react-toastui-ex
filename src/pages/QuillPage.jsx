@@ -14,7 +14,7 @@ const QuillPage = () => {
 
   const handleClick = () => {
     console.log(editorRef.current?.getInstance().getHTML());
-    console.log(editorRef.current?.getInstance().getMarkdown());
+    // console.log(editorRef.current?.getInstance().getMarkdown());
   };
 
   return (
